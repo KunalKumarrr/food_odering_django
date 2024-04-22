@@ -1,6 +1,13 @@
 {% extends "main.html" %}
 {% load static %}
-
+{% block class %}
+sub_page
+{% endblock class%}
+{% block img %}
+<div class="bg-box">
+  <img src="{% static 'images/hero-bg.jpg' %}" alt="">
+</div>
+{% endblock img%}
 
 {% block main %}
 
