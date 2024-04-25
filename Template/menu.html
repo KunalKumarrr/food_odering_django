@@ -1,4 +1,10 @@
 {% extends 'main.html'%}
+{% load static %}
+{% block img %}
+<div class="bg-box">
+  <img src="{% static 'images/wall.jpg' %}" alt="">
+</div>
+{% endblock img%}
 
 {% block main %}
 <section class="food_section layout_padding">
@@ -10,6 +16,7 @@
     </div>
 
     <ul class="filters_menu">
+      <div class="row grid">
       <li class="active" data-filter="*">All</li>
       <li data-filter=".burger">Burger</li>
       <li data-filter=".pizza">Pizza</li>
@@ -23,18 +30,18 @@
           <div class="box">
             <div>
               <div class="img-box">
-                <img src="images/f1.png" alt="">
+                <img src="{% static 'images/f1.png'%}" alt="">
               </div>
               <div class="detail-box">
                 <h5>
                   Delicious Pizza
                 </h5>
                 <p>
-                  Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
-                </p>
+
+                  Indulge in the timeless satisfaction of our delicious pizzas, crafted with the finest ingredients and baked to perfection. Each bite is a symphony of flavors, offering a culinary experience that tantalizes the taste buds and leaves you craving for more. Experience the irresistible allure of our pizzas, where every slice is a celebration of culinary excellence.                </p>
                 <div class="options">
                   <h6>
-                    $20
+                    ₹ 180
                   </h6>
                   <a href="">
                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -99,18 +106,17 @@
           <div class="box">
             <div>
               <div class="img-box">
-                <img src="images/f2.png" alt="">
+                <img src="{% static 'images/f2.png' %}" alt="">
               </div>
               <div class="detail-box">
                 <h5>
                   Delicious Burger
                 </h5>
                 <p>
-                  Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
-                </p>
+                  Savor the irresistible taste of our gourmet burgers, meticulously prepared with premium ingredients and expertly grilled to perfection. Each bite promises a harmonious blend of flavors and textures, creating a culinary masterpiece that satisfies even the most discerning palates. Treat yourself to the ultimate burger experience, where every mouthful is a journey of pure delight.                </p>
                 <div class="options">
                   <h6>
-                    $15
+                    ₹ 80
                   </h6>
                   <a href="">
                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -175,18 +181,17 @@
           <div class="box">
             <div>
               <div class="img-box">
-                <img src="images/f3.png" alt="">
+                <img src="{% static 'images/f3.png' %}" alt="">
               </div>
               <div class="detail-box">
                 <h5>
                   Delicious Pizza
                 </h5>
                 <p>
-                  Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
-                </p>
+                  Indulge in a symphony of flavors with our artisanal pizzas, crafted with the finest ingredients and baked to crispy perfection in our wood-fired oven. Every slice is a culinary delight, bursting with the richness of savory toppings and the aroma of freshly melted cheese. Experience the true essence of Italian cuisine with our mouthwatering pizzas that promise to tantalize your taste buds with every bite.                </p>
                 <div class="options">
                   <h6>
-                    $17
+                    ₹ 280
                   </h6>
                   <a href="">
                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -251,18 +256,17 @@
           <div class="box">
             <div>
               <div class="img-box">
-                <img src="images/f4.png" alt="">
+                <img src="{% static "images/f4.png" %}" alt="">
               </div>
               <div class="detail-box">
                 <h5>
                   Delicious Pasta
                 </h5>
                 <p>
-                  Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
-                </p>
+                  Savor the taste of Italy with our delectable pasta dishes, each lovingly prepared with authentic recipes passed down through generations. Delight in the perfect al dente texture of our pasta, generously coated in rich, flavorful sauces and topped with your choice of succulent ingredients. Whether you crave the classic simplicity of spaghetti aglio e olio or the comforting embrace of creamy carbonara, our pasta offerings promise a culinary journey that will leave you craving for more.                </p>
                 <div class="options">
                   <h6>
-                    $18
+                    ₹ 90
                   </h6>
                   <a href="">
                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -327,18 +331,17 @@
           <div class="box">
             <div>
               <div class="img-box">
-                <img src="images/f5.png" alt="">
+                <img src="{% static "images/f5.png" %}" alt="">
               </div>
               <div class="detail-box">
                 <h5>
                   French Fries
                 </h5>
                 <p>
-                  Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
-                </p>
+                  Indulge in the crispy perfection of our French fries, each golden baton offering a symphony of textures and flavors with every bite. Hand-cut from the finest potatoes and expertly fried to achieve that irresistible crunch, our fries are the ultimate companion to any meal or enjoyed on their own as a satisfying snack. Dip into your favorite sauce or relish their natural goodness – whichever way you choose, our French fries are sure to tantalize your taste buds and leave you craving for another serving.                </p>
                 <div class="options">
                   <h6>
-                    $10
+                    ₹ 100
                   </h6>
                   <a href="">
                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -403,18 +406,17 @@
           <div class="box">
             <div>
               <div class="img-box">
-                <img src="images/f6.png" alt="">
+                <img src="{% static "images/f6.png" %}" alt="">
               </div>
               <div class="detail-box">
                 <h5>
                   Delicious Pizza
                 </h5>
                 <p>
-                  Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
-                </p>
+                  Experience the culinary magic of our signature pizza, crafted with the finest ingredients and baked to perfection in a traditional wood-fired oven. Each slice is a harmonious blend of premium cheese, tangy tomato sauce, and a medley of toppings that dance on your palate, delivering a burst of flavor with every bite. From the crispness of the crust to the gooey goodness of melted cheese, every element of our pizza is a testament to our commitment to culinary excellence.                </p>
                 <div class="options">
                   <h6>
-                    $15
+                    ₹ 380
                   </h6>
                   <a href="">
                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -479,18 +481,17 @@
           <div class="box">
             <div>
               <div class="img-box">
-                <img src="images/f7.png" alt="">
+                <img src="{% static 'images/f7.png' %}" alt="">
               </div>
               <div class="detail-box">
                 <h5>
                   Tasty Burger
                 </h5>
                 <p>
-                  Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
-                </p>
+                  Indulge in a gastronomic delight with our mouthwatering burger, a culinary masterpiece that transcends ordinary expectations. Sink your teeth into juicy, flame-grilled perfection nestled between soft, toasted buns, each bite an explosion of savory goodness. With layers of fresh lettuce, ripe tomatoes, and savory sauces, our burger is a symphony of flavors that will leave you craving for more.                </p>
                 <div class="options">
                   <h6>
-                    $12
+                    ₹ 120
                   </h6>
                   <a href="">
                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -555,18 +556,16 @@
           <div class="box">
             <div>
               <div class="img-box">
-                <img src="images/f8.png" alt="">
+                <img src="{% static 'images/f8.png' %}" alt="">
               </div>
               <div class="detail-box">
                 <h5>
                   Tasty Burger
                 </h5>
-                <p>
-                  Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
-                </p>
+                
                 <div class="options">
                   <h6>
-                    $14
+                    ₹ 90
                   </h6>
                   <a href="">
                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -631,18 +630,17 @@
           <div class="box">
             <div>
               <div class="img-box">
-                <img src="images/f9.png" alt="">
+                <img src="{% static 'images/f9.png' %}" alt="">
               </div>
               <div class="detail-box">
                 <h5>
                   Delicious Pasta
                 </h5>
                 <p>
-                  Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
-                </p>
+                  Experience a taste of Italy with our exquisite pasta dishes. Each forkful is a journey through rich, velvety sauces and perfectly cooked al dente pasta, a harmonious blend of flavors and textures that delight the senses. From classic marinara to creamy carbonara, our pasta creations promise to transport you to the cobblestone streets of Rome with every savory bite.                </p>
                 <div class="options">
                   <h6>
-                    $10
+                    ₹ 90
                   </h6>
                   <a href="">
                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">

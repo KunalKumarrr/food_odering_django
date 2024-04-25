@@ -5,12 +5,12 @@ from django.http import HttpResponse
 def home(request):
     return render(request,'home.html')
 def order(request):
-    return render(request,'home.html')
+    return render(request,'order.html')
 def about(request):
     return render(request,'about.html')
 def book_table(request):
     return render(request,'book_table.html')
 def contact(request):
-    return render(request,'home.html')
+    return render(request,'contact.html')
 def menu(request):
     return render(request,'menu.html')
